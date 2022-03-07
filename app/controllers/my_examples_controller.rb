@@ -1,11 +1,11 @@
 class MyExamplesController < ApplicationController
   def fortune
-    display_fortune = {
-      fortune1: "You will be an expert coder.", 
-      fortune2: "Your coding journey will be prosperous."
-      fortune3: "You need more Rails preactice."
-    }
-    render json: {message: "Your forune is: #{display_fortune.sample}"}
+    display_fortune = [
+      "You will be an expert coder.", 
+      "Your coding journey will be prosperous.",
+      "You need more Rails practice..."
+    ]
+    render json: {message: "Your fortune is: #{display_fortune.sample}"}
   end
 end
 
